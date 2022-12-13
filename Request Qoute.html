@@ -1,0 +1,97 @@
+<html>
+		<head>
+				<title> SEIPONE TECHNICAL SOLUTIONS </title>
+
+				<link rel="stylesheet"  href="stylingSheet.css">
+		</head>
+		<body>
+				
+				
+			<div class = "Navigation">
+				<h1>SEIPONE TECHNICAL SOLUTIONS</h1> 
+				<img src="SEIPONE.jpg">
+				<ul>
+					<li><a href = "HOME.html" > HOME </a></li>
+					<li><a href = "Products.html" > PRODUCTS </a></li>
+					<li><a href = "About Us.html" > ABOUT US </a></li>
+					<li><a href = "Request Qoute.html" > REQUEST FREE QOUTE </a></li>
+					<li><a href = "CONTACTS.html" > CONTACTS </a></li>
+					
+				</ul>
+			</div>
+		
+	
+
+</style>
+
+<body>
+
+
+    <div class="Left side">
+
+        <header>
+            <h2 class="Content-text">NEW RELEASE'S</h2>
+        </header>
+
+        <div class="Content-box-one">
+            <img src="C:\Users\dexter\Desktop\CP ISAT\IMG-20220822-WA0131.jpg" class="Release-one">
+        </div>
+
+        <div class="box-descr">
+            <h4><i>-The clash of the strings.</i></h4>
+        </div>
+
+        <div class="Content-box-two">
+            <img src="C:\Users\dexter\Desktop\CP ISAT\IMG-20220822-WA0132.jpg" class="Release-two">
+        </div>
+
+        <div class="box-two">
+            <h4><i>-Collapse of a quantum field.</i></h4>
+        </div>
+
+    </div>
+
+    <div class="Right side">
+
+        <header>
+            <h2 class="Home-text">SOLAR CINEMATIC</h2>
+
+            <div class="Nav">
+                <li>
+                    <a href="#"> Home </a></li>
+                <li>
+                    <a href="C:\Users\dexter\Desktop\CP ISAT\Search-code.html" onclick="openSearch()"> Search </a></li>
+                <li>
+                    <a href="#"> Create-Account </a></li>
+                <li>
+                    <a href="#"> Payment-Plans</a>
+                </li>
+                <li>
+                    <a href="C:\Users\dexter\Desktop\CP ISAT\SOLAR-CINEMATIC.html"> Complete Survey</a>
+                </li>
+            </div>
+        </header>
+
+        <div>
+            <form>
+                <label class="L-name">NAME:</label><input type="text" class="Text-Area-One" name="userName">
+                <label class="L-pass">PASSWORD:</label><input type="text" class="Text-Area-Two" name="passWord">
+                <input type="submit" value="Login" onclick="checkPass(form)" class="Login-btn">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function checkPass(form) {
+            if (form.userName.value == "Samuel_Kula" && form.passWord.value == "Samuel12#@") {
+                window.open('Page-two.html')
+            } else {
+                alert("Error Password or Username")
+            }
+        }
+    </script>
+
+</body>
+
+</html>
+    

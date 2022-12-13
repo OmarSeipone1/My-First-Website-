@@ -1,0 +1,400 @@
+<html>
+		<head>	
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+<style>
+				
+				.fa {
+					  padding: 20px;
+					  font-size: 30px;
+					  width: 50px;
+					  text-align: center;
+					  text-decoration: none;
+					  margin: 5px 2px;
+					}
+
+					.fa:hover {
+					    opacity: 0.7;
+					}
+
+
+					.fa-instagram {
+					  background: #125688;
+					  color: white;
+					}
+
+					.fa-linkedin {
+					  background: #007bb5;
+					  color: white;
+					}
+
+			</style>
+			<style>
+					    * {
+					        box-sizing: auto;
+					    }
+					    
+					    .slide {
+					        display: none;
+					    }
+					    
+					    img {
+					        vertical-align: middle;
+											    }
+											    
+						    .slide-show {
+						        max-width: auto;
+						        position: relative;
+						        margin: auto;
+						    }
+						    
+						    .dot {
+						        height: 15px;
+						        width: 15px;
+						        margin: 0 2px;
+						        background-color: #bbb;
+						        border-radius: 50%;
+						        display: inline-block;
+						        transition: background-color 0.6s ease;
+						    }
+						    
+						    .active {
+						        background-color: #717171;
+						    }
+						    
+						    .fade {
+						        animation-name: fade;
+						        animation-duration: 1.5s;
+						    }
+    
+							    @keyframes fade {
+							        from {
+							            opacity: .4
+							        }
+							        to {
+							            opacity: 1
+							        }
+							    }
+							    
+							    .web-site {
+							        background-color: rgb(59, 190, 59);
+							        height: 120px;
+							        width: 100%;
+							        display: block;
+							        margin-top: 0;
+							        margin-left: 0;
+							        border-radius: 4px;
+							    }
+							    
+							    body {
+							        background-color: white;
+							    }
+							    
+							    .Menu-one-container {
+							        display: inline-block;
+							        cursor: pointer;
+							        position: absolute;
+							        left: 50%;
+							        top: 40px;
+							    }
+							    
+							    .menu-one,
+							    .menu-two,
+							    .menu-three {
+							        width: 35px;
+							        height: 5px;
+							        background-color: whitesmoke;
+							        margin: 6px 0;
+							        transition: 0.4s;
+							    }
+    
+								    .change .menu-one {
+								        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+								        transform: rotate(-45deg) translate(-9px, 6px);
+								    }
+								    
+								    .change .menu-two {
+								        opacity: 0;
+								    }
+								    
+								    .change .menu-three {
+								        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+								        transform: rotate(45deg) translate(-8px, -8px);
+								    }
+								    
+								    .img-place {
+								        opacity: 1;
+								        width: 100%;
+								        border-radius: 4px;
+								    }
+								    
+								    .img-place:hover {
+								        opacity: 1.0;
+								    }
+								    
+								    .page-content {
+								        background-color: rgb(245, 245, 245);
+								        border-radius: 4px;
+								    }
+								    
+								    .logo-section {
+								        background-color: #f1f1f1;
+								        border-radius: 4px;
+								        height: 100px;
+								        overflow: hidden;
+								        padding: 50px 40px;
+								    }
+								    
+								    .divider {
+								        background-color: white;
+								        height: 10px;
+								    }
+    
+										    .logo-section a.logo {
+										        font-size: 25px;
+										        font-weight: bold;
+										    }
+										    
+										    .logo-section a:hover {
+										        background-color: #ddd;
+										        color: black;
+										    }
+										    
+										    .logo-section a.active {
+										        background-color: dodgerblue;
+										        color: white;
+										    }
+										    
+										    .Header-right {
+										        float: right;
+										    }
+										    
+										    .logo-section a {
+										        float: left;
+										        color: black;
+										        text-align: center;
+										        padding: 12px;
+										        text-decoration: none;
+										        font-size: 18px;
+										        line-height: 70px;
+										        border-radius: 4px;
+										    }
+										    
+										    @media screen and (max-width:500px) {
+										        .logo-section a {
+										            float: none;
+										            display: block;
+										            text-align: left;
+										        }
+										        .header-right {
+										            float: none;
+										        }
+										    }
+										    
+										    .Text-block {
+										        position: absolute;
+										        bottom: 20px;
+										        right: 20px;
+										        height: 600px;
+										        width: 700px;
+										        background-color: black;
+										        color: white;
+										        padding-left: 20px;
+										        padding-right: 20px;
+										        opacity: 0.8;
+										    }
+										    
+										    .TEXT {
+										        font-size: 80px;
+										    }
+										    
+										    .Text-two {
+										        font-size: 70px;
+										    }
+				</style>
+				<title> SEIPONE TECHNICAL SOLUTIONS </title>
+
+				<link rel="stylesheet"  href="stylingSheet.css">
+
+		</head>
+
+
+		<body>
+			
+        </header>
+   	    </div>
+				
+   	    		 <div class="divider"></div>
+
+   	    		 	<!-- This is for Naviagtion through the website -->
+			<div class = "Navigation">
+				<h1>SEIPONE TECHNICAL SOLUTIONS</h1> 
+				<img src="SEIPONE.jpg">
+				<ul>
+					<li><a href = "HOME.html" > HOME </a></li>
+					<li><a href = "Products.html" > PRODUCTS </a></li>
+					<li><a href = "About Us.html" > ABOUT US </a></li>
+					<li><a href = "Request Qoute.html" > REQUEST FREE QOUTE </a></li>
+					<li><a href = "CONTACTS.html" > CONTACTS </a></li>
+					
+				</ul>
+			</div>
+
+					<!-- This is for the Sliding images on the website -->
+				  <div id="content-of-website" class="page-content">
+
+				  	  <div class="slide-show">
+            <div class="slide fade">
+                <img src="CPU.jpg.jpg" class="img-place">
+            </div>
+
+            <div class="slide fade">
+                <img src="pc4.jpg" class="img-place">
+            </div>
+
+            <div class="slide fade">
+                <img src="Gadget1.jpg" class="img-place">
+            </div>
+
+         <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+			<div class = "INFO">
+				<h1>SEIPONE TECHNICAL SOLUTIONS</h1> 
+				<p>Come to us and we will help you to get rid of all computer problems</p>
+			</div>
+			<div class="multimedia">
+			<video width="1500" height="300" controls autoplay>
+			  <source src=" Computer repair.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video>
+		</div>
+
+				<br><br><br><br>
+
+ 
+
+		<div class="pics">
+      			
+      			<img src="CPU.jpg"/>
+      			<img src="pc4.jpg" />
+      			<img src="Gadget1.jpg"/>
+      	</div>
+		
+
+			
+		<br><br><br><br><br><br><br><br>
+			
+	</div>
+
+	<div class="No_Fix">
+			<h3><b>No Fix No Fee</b></h3>
+			<br><br>
+			<p>No charge if we do not deliver a successful repair.</p> 
+			<p>No upfront costs, assessment or quote rejection fees.</p>
+			<p> Plus total transparency on all charges</p>
+			<br>
+			<p>
+			<a href="About Us.html"> Learn More</a> 
+			</p>
+		</div>
+
+
+
+		<div class="Repairs_Done">
+			<h3><b>Repairs Done with Pride</b></h3>
+			<br><br>
+			<p>Our company prides itself on reliability,</p> 
+			<p>and our work is trusted by our clients. We</p>
+			<p>provide a worry-free service you can</p>
+			<p>always count on.</p>
+			<br>
+			<p>
+			<a href="About Us.html"> Learn More</a> 
+			</p>
+		</div>
+
+		<div class="Software_Upgrades">
+			<h3><b>Hardware / Software Upgrades</b></h3>
+			<br><br>
+			<p>Why replace when you can upgrade? We</p> 
+			<p>offer hardware upgrades that make a</p>
+			<p>difference. Software upgrades that wont</p>
+			<p>turn your life upside down.</p>
+			<br>
+			<P>
+			<a href="About Us.html"> Learn More</a> 
+		</div>
+
+			<br><br><br><br>
+	<div class="Footer1">
+		
+			<h1>Apple, Branded, Clone devices & Many more other devices , Components & Gadgets</h1>
+				<br><br><br>
+			<h2>Repair & Services</h2>
+				<br>
+			<p>Life without our devices is just unimaginable! So if your favourite piece of hardware is ailing with age or just soooo slow, what do you do to get it sorted a.s.a.p? Replacement is without a doubt, the most expensive solution. Do you attempt to reload the software yourself? Do you let your colleagues kid, who is an  IT guru, do it for you? That comes with more hassles and downtime than you could imagine</p> 
+			<br>
+			<p>Seipone Technical Solutions specializes in an A-Z backup, format and reload of the full operating system, on just about any laptop or desktop device from any of the most well known manufacturers. We assist with updates to macOS as well as Windows 7,8,10 & 11 systems. We offer advice and assist with setup of various cloud services. We offer hardware and software upgrades such as conversions to a SSD (solid State Drive) for almost any computer as well as dual hard drive configurations. RAM or memory upgrades are also popular.</p>
+			<br>
+			<p>Screen, keyboard, battery, charger and various chassis part replacements, are just some of the services we offer on laptops. We are also one of the only centres to repair laptop hinges and hinge mountings, saving thousands in replacement costs</p>
+			<br>
+	</div>
+
+	<!-- This is for the footer section  -->
+	<div class="Footer2">
+		
+				<a href="" title="">Seipone Technical Solutions</a> • © 2022 • <a href="https://www.gov.za/terms-and-conditions-use-0" title="Terms &amp; Conditions">Terms &amp; Conditions</a>
+				 <p>Website designed by<a href="https://www.instagram.com/omar_seipone_1/"> Amogelang Lawrence Seipone</a></p>
+
+				<a href="https://www.instagram.com/omar_seipone_1/" class="fa fa-instagram"></a>	
+				<a href="www.linkedin.com/in/amogelang-lawrence-omar-seipone-93a44a22b" class="fa fa-linkedin"></a>
+				<a href="https://api.whatsapp.com/send?phone=0633490748">Send Message on whatsapp</a>
+	</div>
+
+
+
+</div></div></div></div>
+						
+						<!-- This is my javaScript Code to loop through the image slider-->
+				  <script>
+            function myFunction(x) {
+                x.classList.toggle("change");
+            }
+
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("slide");
+
+                let dots = document.getElementsByClassName("dot");
+
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace("active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += "active";
+                setTimeout(showSlides, 2000);
+            }
+        </script>
+		</body>
+</html>

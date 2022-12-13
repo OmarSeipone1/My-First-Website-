@@ -1,0 +1,156 @@
+<html>
+		<head>
+				<title> SEIPONE TECHNICAL SOLUTIONS </title>
+
+				<link rel="stylesheet"  href="stylingSheet.css">
+				 <link rel="stylesheet" href="About Us.css">
+		</head>
+		<body>
+				
+				
+			<div class = "Navigation">
+				<h1>SEIPONE TECHNICAL SOLUTIONS</h1> 
+				<img src="SEIPONE.jpg">
+				<ul>
+					<li><a href = "HOME.html" > HOME </a></li>
+					<li><a href = "Products.html" > PRODUCTS </a></li>
+					<li><a href = "About Us.html" > ABOUT US </a></li>
+					<li><a href = "Request Qoute" > REQUEST FREE QOUTE </a></li>
+					<li><a href = "CONTACTS.html" > CONTACTS </a></li>
+					
+				</ul>
+			</div>
+			
+
+		<!DOCTYPE html>
+
+<script>
+    function validateInput() {
+        var checker = document.forms["survey"]["comment"].value; //statement for getting the text area checked.
+        if (checker == "") {
+            alert("Please leave a comment.");
+            return false;
+        }
+    } //This function test whether a user has left a comment or not.
+
+
+    function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+}
+document.getElementById("demo").innerHTML = toCelsius(77);
+
+
+function myFunction() {
+  alert("Hello World!");
+}
+</script>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1 id="title" class="text-center">Seipone Technical Solutions Survey Form</h1>
+            <p id="description" class="description text-center">
+                "Thank you for helping us improve our site."
+            </p>
+        </header>
+        <form id="Survey-form" name="survey" onclick="return validateInput()">
+            <div class="form-group">
+                <label id="name-label" for="name">Name:</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email:</label>
+                <input type="text" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number">
+                    "Age"
+                    <span class="clue">(optional)</span>
+                </label>
+                <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+            </div>
+
+            <div class="form-group">
+                <p>Which option best describes your current favourite technology </p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select choice:</option>
+                    <option value="student">Gadgets</option>
+                    <option value="job">Robots</option>
+                    <option value="learner">Hackers</option>
+                    <option value="preferNo">Artificial Intellegence</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Would you recommend Seipone Technical Solutions  to a friend?</p>
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked>
+                    "Definitely"
+                </label>
+
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio">
+                    "Maybe"
+                </label>
+
+                <label>
+                    <input name="user-recommend" value="not-sure" type="radio" class="input-radio">
+                    "Not sure"
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>What is your favourite feature of Seipone Technical Solutions?</p>
+                <select id="most-like" name="mostLike" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="challenges">Hardware</option>
+                    <option value="projects">Software</option>
+                    <option value="community">Customer Service</option>
+                    <option value="openSource">Gadgets</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    "What would you like to see improved?"
+                    <span class="clue">(check all that apply)</span>
+                </p>
+                <label>
+                    <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">
+                    "Services"
+                </label>
+                <label>
+                    <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">
+                    "Space virtualisation"
+                </label>
+                <label>
+                    <input name="prefer" value="data-visualisation" type="checkbox" class="input-checkbox">
+                    "Data visualisation"
+                </label>
+                <label>
+                    <input name="prefer" value="challenges" type="checkbox" class="input-checkbox">
+                    "Artworks"
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here....."></textarea>
+            </div>
+
+
+            <input type="button" id="submit" class="submit-button" value="Submit">
+
+
+
+        </form>
+    </div>
+
+
+
+		</body>
+</html>
